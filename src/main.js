@@ -26,6 +26,7 @@ form.addEventListener('submit', async (e) => {
   showLoader();
 
   try {
+    showLoader();
     const data = await getImagesByQuery(query, currentPage);
     const images = data.hits;
 
